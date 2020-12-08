@@ -175,12 +175,12 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (lands) {
-    this._div.innerHTML = '<h4>Name</h4>' +  lands
+    this._div.innerHTML = lands
 };
 
 info.addTo(map);
 
-var infoStart = "Click the map";
+var infoStart = "<b>Click any area";
 info.addTo(map);
 info.update(infoStart);
 
